@@ -7,7 +7,16 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body-id">
+<body id="body-id" onload="handleOnLoad()">
+    <nav class="navbar">
+        <h4 class="title">Color Flipper</h4>
+        <h4 class="clickable-title" onclick="handleColorCodeFormat(true)">RGB</h4>
+        <h4 class="clickable-title" onclick="handleColorCodeFormat(false)">HEX</h4>
+    </nav>
+
+    <div id="background-color-code" class="background-color-code">
+        Background Color: <span id="color-code"></span>
+    </div>
     <button class="btn-click" id="btn-click" onclick="handleOnClick()">Click Me !</button>
     <script src="./script.js"></script>
 </body>
